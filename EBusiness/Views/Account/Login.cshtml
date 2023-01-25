@@ -1,0 +1,77 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>eBusiness Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/~/assets/img/favicon.png" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: eBusiness - v4.10.0
+    * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+<div class="container">
+    <form method="post" asp-action="login" enctype="multipart/form-data">
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label asp-for="Username" class="form-label">Username <sup class="text-danger">*</sup></label>
+                <input asp-for="Username" class="form-control" placeholder="Username">
+            </div>
+            <div class="mb-3 col-6">
+                <label asp-for="Password" class="form-label">Password <sup class="text-danger">*</sup></label>
+                <input asp-for="Password" class="form-control" placeholder="Password">
+            </div>
+            <div class="text-center" asp-validation-summary="ModelOnly"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="d-flex justify-content-around">
+            <div><a class="btn btn-primary" asp-controller="account" asp-action="register">Go to Register →</a></div>
+            <div><a class="btn btn-success" asp-controller="home" asp-action="index">←Back to home</a></div>
+    </div>
+</div>
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+
+</html>

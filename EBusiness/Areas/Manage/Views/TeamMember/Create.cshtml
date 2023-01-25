@@ -1,0 +1,62 @@
+﻿@model TeamMember
+<div class="container">
+    <form method="post" asp-action="create" enctype="multipart/form-data">
+        <div class="row">
+            <div class="mb-3 col-4">
+                <label asp-for="Fullname" class="form-label">Fullname <sup class="text-danger">*</sup></label>
+                <input asp-for="Fullname" class="form-control" placeholder="Fullname">
+                <span class="text-danger"asp-validation-for="Fullname"></span>
+            </div>
+            <div class="mb-3 col-4">
+                <label asp-for="Positon" class="form-label">Positon <sup class="text-danger">*</sup></label>
+                <input asp-for="Positon" class="form-control" placeholder="Positon">
+                <span class="text-danger"asp-validation-for="Positon"></span>
+            </div>
+            <div class="mb-3 col-4">
+                <label asp-for="Order" class="form-label">Order <sup class="text-danger">*</sup></label>
+                <input asp-for="Order" class="form-control" placeholder="Order">
+                <span class="text-danger" asp-validation-for="Order"></span>
+            </div>
+        </div>
+
+       <div class="row">
+            <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountUrl1" class="form-label">SocialMediaAccountUrl1</label>
+            <input asp-for="SocialMediaAccountUrl1" class="form-control" placeholder="SocialMediaAccountUrl1">
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountIcon1" class="form-label">SocialMediaAccountIcon1</label>
+            <input asp-for="SocialMediaAccountIcon1" class="form-control" placeholder="SocialMediaAccountIcon1">
+        </div>
+       </div>
+
+       <div class="row">
+            <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountUrl2" class="form-label">SocialMediaAccountUrl2</label>
+            <input asp-for="SocialMediaAccountUrl2" class="form-control" placeholder="SocialMediaAccountUrl2">
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountIcon2" class="form-label">SocialMediaAccountIcon2</label>
+            <input asp-for="SocialMediaAccountIcon2" class="form-control" placeholder="SocialMediaAccountIcon2">
+        </div>
+       </div>
+
+       <div class="row">
+            <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountUrl3" class="form-label">SocialMediaAccountUrl3</label>
+            <input asp-for="SocialMediaAccountUrl3" class="form-control" placeholder="SocialMediaAccountUrl3">
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="SocialMediaAccountIcon3" class="form-label">SocialMediaAccountIcon3</label>
+            <input asp-for="SocialMediaAccountIcon3" class="form-control" placeholder="SocialMediaAccountIcon3">
+        </div>
+       </div>
+
+        <div class="mb-3 col-12">
+            <label asp-for="ImageFile" class="form-label">Upload Image <sup class="text-danger">*</sup></label>
+            <input asp-for="ImageFile" class="form-control">
+            <span class="text-danger"asp-validation-for="ImageFile"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
